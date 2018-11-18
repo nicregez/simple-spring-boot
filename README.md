@@ -19,7 +19,7 @@ Put the randomly generated route into variables DOMAIN and HOST for ease of use
 
     $ DOMAIN=scapp.io
     $ HOST=...
-    $ curl http://${HOST}.${DOMAIN}/welcome
+    $ curl http://${HOST}.${DOMAIN}/welcome -s | jq "."
 
 blue/green (version upgrade)
 ----------------------------
